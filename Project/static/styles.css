@@ -1,0 +1,172 @@
+/* styles.css */
+
+/* Reset some default browser styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Set a background color and font for the body */
+body {
+    background-color: #e0f7fa; /* Light cyan background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('https://example.com/your-background-image.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Center the content and add some padding */
+.container {
+    max-width: 800px; /* Increased width for larger screens */
+    margin: 30px auto;
+    padding: 40px; /* Increased padding for more spacious layout */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
+}
+
+/* Style the header */
+h1 {
+    text-align: center;
+    color: #00796b; /* Dark teal color */
+    margin-bottom: 30px;
+    font-size: 3em; /* Larger font size */
+}
+
+/* Style the form and input elements */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px 20px; /* Increased padding for larger input field */
+    border: 2px solid #ff5722; /* Bright orange border */
+    border-radius: 10px; /* Rounded corners */
+    transition: border-color 0.3s;
+    font-size: 18px; /* Larger font size */
+}
+
+input[type="text"]:focus {
+    border-color: #e64a19; /* Darker orange on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 15px 25px; /* Increased button padding */
+    background-color: #ff5722; /* Bright orange */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 18px; /* Larger font size */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Style the tasks list */
+h2 {
+    margin-top: 30px; /* Increased margin for better spacing */
+    color: #00796b; /* Dark teal color */
+    font-weight: 600; /* Bold font */
+    font-size: 2em; /* Larger font size */
+}
+
+/* Styling for task items */
+ul {
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.8); /* Light background for tasks */
+    padding: 20px; /* Increased padding for task items */
+    margin: 10px 0; /* Increased margin for better spacing */
+    border: 1px solid #b2ebf2; /* Subtle border */
+    border-radius: 10px; /* More rounded corners */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1.2em; /* Larger font size for task items */
+}
+
+li:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+input[type="checkbox"] {
+    margin-right: 15px; /* Increased margin for better spacing */
+    cursor: pointer;
+    width: 25px; /* Larger checkbox size */
+    height: 25px; /* Larger checkbox size */
+}
+
+/* Style the remove box */
+.remove-box {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Margin to separate from task text */
+}
+
+.remove-button {
+    padding: 5px 10px; /* Padding for the remove button */
+    background-color: #f44336; /* Red background for remove button */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Style the links */
+a {
+    color: #ff4081; /* Pink color */
+    text-decoration: none;
+    margin-left: 15px; /* Increased margin for better spacing */
+    font-size: 1.1em; /* Larger font size for links */
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c51162; /* Darker pink on hover */
+}
+
+/* Subtasks styling */
+h2.subtasks {
+    margin-top: 40px; /* Increased margin for better spacing */
+    color: #00796b; /* Dark teal color */
+    font-size: 1.8em; /* Larger font size */
+}
+
+.subtask-item {
+    padding: 12px 15px; /* Increased padding for subtasks */
+    background: #e1f5fe; /* Light blue for subtasks */
+    margin: 8px 0; /* Increased margin for better spacing */
+    border-radius: 5px; /* More rounded corners */
+    font-size: 1.1em; /* Larger font size for subtasks */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column; /* Stack form elements on small screens */
+    }
+
+    input[type="text"] {
+        margin-bottom: 15px; /* Space between input and button */
+    }
+}
